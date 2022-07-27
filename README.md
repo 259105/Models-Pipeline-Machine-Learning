@@ -41,5 +41,13 @@ Pipeline for machine learning binary problems, wrote completely with numpy.
   - `setAlpha()`: set alpha factor, for LBG algorithm, it's the rescaling factor for the new starting points of the components at each iteration of LBG
   - `setPsi()`: set psi factor, used to avoid the problem of generative solutions, it's a limitation on the variation of the covatiance matrices of a GMM component
 ## **models.py**
+All the Class here implement the **Model** Interface, the main method is `tranform()`
 ## **preProc.py**
+All the pre-processing stage, are **PipelineStage**, the main method is `compute()`
+- **PCA**
+- **LDA**
+- **ZNorm**
+- **L2Norm**
+- **Gaussianization**
 ## **Tools.py**
+Lots of usefull tools, used inside the whole project
